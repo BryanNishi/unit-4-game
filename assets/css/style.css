@@ -1,6 +1,8 @@
 body,
 html {
     height: 100%;
+    background-image: url(../images/warp.png);
+    background-position: center center;
 }
 
 .bg {
@@ -9,15 +11,39 @@ html {
     background-position: center center;
 }
 
-h1{
+h1 {
     font-family: 'Montserrat Subrayada', sans-serif;
     color: #ffff;
     text-align: right;
     font-size: 50px;
-    
 }
-h2{
+
+h2 {
     font-family: 'Orbitron', sans-serif;
     color: #ffff;
     background-color: black;
+}
+
+h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 11px;
+    margin: 0;
+}
+
+h4 {
+    font-family: 'Montserrat Subrayada', sans-serif;
+    color: #ffff;
+    background-color: black;
+    text-align: center;
+}
+
+p {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 11px;
+    margin: 0;
+}
+
+img{
+    height: 100px;
+    width: 100px;
 }

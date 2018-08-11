@@ -23,15 +23,16 @@
                 <h1>Star Wars RPG Game!</h1>
             </div>
         </div>
-        <div class="row">
+        <div class="row choose">
             <div class="col-md-12">
                 <h4>Choose Your Character...</h4>
             </div>
         </div>
+       
         <!--Row of selectable characters-->
-        <div class="row">
+        <div class="row start">
             <div class="skywalker col-xs-6 col-sm-4 col-md-2">
-                <button id="skywalker" class="btn ">
+                <button id="skywalker" class="btn character">
                     <p>Luke Skywalker</p>
                     <img class="card-img-top" src="../unit-4-game/assets/images/luke.jpg" alt="Luke Skywalker">
                     <h3>HP:
@@ -40,7 +41,7 @@
                 </button>
             </div>
             <div class="kenobi col-xs-6 col-sm-4 col-md-2">
-                <button id="kenobi" class="btn ">
+                <button id="kenobi" class="btn character">
                     <p>Obi Wan Kenobi</p>
                     <img class="card-img-top" src="../unit-4-game/assets/images/kenobi.jpg" alt="Obi Wan Kenobi">
                     <h3>HP:
@@ -49,7 +50,7 @@
                 </button>
             </div>
             <div class="vader col-xs-6 col-sm-4 col-md-2">
-                <button id="vader" class="btn ">
+                <button id="vader" class="btn character">
                     <p>Darth Vader</p>
                     <img class="card-img-top" src="../unit-4-game/assets/images/vader.jpg" alt="Darth Vader">
                     <h3>HP:
@@ -58,7 +59,7 @@
                 </button>
             </div>
             <div class="kylo col-xs-6 col-sm-4 col-md-2">
-                <button id="kylo" class="btn ">
+                <button id="kylo" class="btn character">
                     <p>Kylo Ren</p>
                     <img class="card-img-top" src="../unit-4-game/assets/images/kylo.jpg" alt="Kylo Ren">
                     <h3>HP:
@@ -70,7 +71,7 @@
 
         <!--Your Selected Character-->
 
-        <div class="row chosen">
+        <div class="row char">
             <div class="col-md-4">
                 <h2>Your Character</h2>
             </div>
@@ -101,7 +102,7 @@
         <div class="row fight">
             <div class="col-md-4">
                 <h2>Fight Section</h2>
-                <button type="button" class="btn" id="attack">Attack!</button>
+                <button type="button" class="btn btn-danger" id="attack">Attack!</button>
             </div>
         </div>
 
@@ -115,6 +116,25 @@
                 <div class="col-md-12">
                     <div id="defender"></div>
                 </div>
+            </div>
+            <div id= "fight-text">
+
+            </div>
+            
+        </div>
+        <div class="row win">
+            <div class="col-md-12">
+                <h5>You win!</h5>
+            </div>
+        </div>
+        <div class="row lose">
+            <div class="col-md-12">
+                <h5>You Lose!</h5>
+            </div>
+        </div>
+        <div class="row playagain text-center">
+            <div class="col-md-2">
+                <button class= "btn btn-success shadow-lg p-3 mb-5 bg-white" id ="reset">Play Again?</button>
             </div>
         </div>
     </div>

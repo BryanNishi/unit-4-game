@@ -55,11 +55,25 @@ img{
     height: 100px;
     width: 100px;
 }
+.btn{
+    margin-bottom: 15px;
+}
  
-.reset {
 
+
+#fight-text{
+    font-family: 'Orbitron', sans-serif;
+    color: #ffff;
+    font-size: 20px;
+    background-color: black;
+    text-align: center;
 }
 
-.fight{
+.enemyColor{
+    background-color: red;
+}
 
+.defColor{
+    background-color:black;
+    color: white;
 }

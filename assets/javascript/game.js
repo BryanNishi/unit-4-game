@@ -65,37 +65,49 @@ $(document).ready(function reset() {
             $(".skywalker").appendTo("#char");
             skywalker.chosen = true;
             $(".kenobi").appendTo("#enemies");
+            $("#kenobi").addClass("enemyColor");
 
             $(".vader").appendTo("#enemies");
+            $("#vader").addClass("enemyColor");
 
             $(".kylo").appendTo("#enemies");
+            $("#kylo").addClass("enemyColor");
 
         } else if (this.id == "kenobi" && isChosen == false) {
             $(".kenobi").appendTo("#char");
             kenobi.chosen = true;
             $(".skywalker").appendTo("#enemies");
+            $("#skywalker").addClass("enemyColor");
 
             $(".vader").appendTo("#enemies");
+            $("#vader").addClass("enemyColor");
 
             $(".kylo").appendTo("#enemies");
+            $("#kylo").addClass("enemyColor");
 
         } else if (this.id == "vader" && isChosen == false) {
             $(".vader").appendTo("#char");
             vader.chosen = true;
             $(".kenobi").appendTo("#enemies");
+            $("#kenobi").addClass("enemyColor");
 
             $(".skywalker").appendTo("#enemies");
+            $("#skywalker").addClass("enemyColor");
 
             $(".kylo").appendTo("#enemies");
+            $("#kylo").addClass("enemyColor");
 
         } else if (this.id == "kylo" && isChosen == false) {
             $(".kylo").appendTo("#char");
             kylo.chosen = true;
             $(".kenobi").appendTo("#enemies");
+            $("#kenobi").addClass("enemyColor");
 
             $(".vader").appendTo("#enemies");
+            $("#vader").addClass("enemyColor");
 
             $(".skywalker").appendTo("#enemies");
+            $("#skywalker").addClass("enemyColor");
 
         }
         isChosen = true;
@@ -113,21 +125,25 @@ $(document).ready(function reset() {
 
         if (this.id == "skywalker" && isChosen == true && skywalker.chosen !== true && defenderOpen == true) {
             $(".skywalker").appendTo("#defender");
+            $("#skywalker").addClass("defColor");
             skywalker.defend = true;
             defenderOpen = false;
 
         } else if (this.id == "kenobi" && isChosen == true && kenobi.chosen !== true && defenderOpen == true) {
             $(".kenobi").appendTo("#defender");
+            $("#kenobi").addClass("defColor");
             kenobi.defend = true;
             defenderOpen = false;
 
         } else if (this.id == "vader" && isChosen == true && vader.chosen !== true && defenderOpen == true) {
             $(".vader").appendTo("#defender");
+            $("#vader").addClass("defColor");
             vader.defend = true;
             defenderOpen = false;
 
         } else if (this.id == "kylo" && isChosen == true && kylo.chosen !== true && defenderOpen == true) {
             $(".kylo").appendTo("#defender");
+            $("#kylo").addClass("defColor");
             kylo.defend = true;
             defenderOpen = false;
 

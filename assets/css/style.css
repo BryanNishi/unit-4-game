@@ -59,7 +59,9 @@ img{
     margin-bottom: 15px;
 }
  
-
+#reset{
+    text-align: center;
+}
 
 #fight-text{
     font-family: 'Orbitron', sans-serif;

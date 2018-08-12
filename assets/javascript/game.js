@@ -167,6 +167,8 @@ $(document).ready(function reset() {
             skywalker.atk += 22;
             $("#skywalkerHp").text(skywalker.hp);
             $("#kenobiHp").text(kenobi.hp)
+            $("#fight-text").text("Luke Skywalker attacked for " + skywalker.atk + "! " + 
+            "Obi Wan Kenobi counter attacked for " + kenobi.ctr + "!")
 
         } else if (skywalker.chosen == true && vader.defend == true && vader.dead !== true) {
             console.log("sky v vader attack");
@@ -175,6 +177,8 @@ $(document).ready(function reset() {
             skywalker.atk += 22;
             $("#skywalkerHp").text(skywalker.hp);
             $("#vaderHp").text(vader.hp)
+            $("#fight-text").text("Luke Skywalker attacked for " + skywalker.atk + "! "+ 
+            "Darth Vader counter attacked for " + vader.ctr + "!")
         } else if (skywalker.chosen == true && kylo.defend == true && kylo.dead !== true) {
             console.log("sky v kylo attack");
             kylo.hp -= skywalker.atk;
@@ -182,6 +186,8 @@ $(document).ready(function reset() {
             skywalker.atk += 22;
             $("#skywalkerHp").text(skywalker.hp);
             $("#kyloHp").text(kylo.hp)
+            $("#fight-text").text("Luke Skywalker attacked for " + skywalker.atk + "! " + 
+            "Kylo Ren counter attacked for " + kylo.ctr + "!")
         }
         //kenobi attacks
         else if (kenobi.chosen == true && skywalker.defend == true && skywalker.dead !== true) {
@@ -191,6 +197,8 @@ $(document).ready(function reset() {
             kenobi.atk += 8;
             $("#skywalkerHp").text(skywalker.hp);
             $("#kenobiHp").text(kenobi.hp)
+            $("#fight-text").text("Obi Wan Kenobi attacked for " + kenobi.atk + "! " + 
+            "Luke Skywalker counter attacked for " + skywalker.ctr + "!")
         } else if (kenobi.chosen == true && vader.defend == true && vader.dead !== true) {
             console.log("kenobi v vader attack");
             vader.hp -= kenobi.atk;
@@ -198,6 +206,8 @@ $(document).ready(function reset() {
             kenobi.atk += 8;
             $("#vaderHp").text(vader.hp);
             $("#kenobiHp").text(kenobi.hp)
+            $("#fight-text").text("Obi Wan Kenobi attacked for " + kenobi.atk + "! " + 
+            "Darth Vader counter attacked for " + vader.ctr + "!")
         } else if (kenobi.chosen == true && kylo.defend == true && kylo.dead !== true) {
             console.log("kenobi v kylo attack");
             kylo.hp -= kenobi.atk;
@@ -205,6 +215,8 @@ $(document).ready(function reset() {
             kenobi.atk += 8;
             $("#kyloHp").text(kylo.hp);
             $("#kenobiHp").text(kenobi.hp)
+            $("#fight-text").text("Obi Wan Kenobi attacked for " + kenobi.atk + "! " + 
+            "Kylo Ren counter attacked for " + kylo.ctr + "!")
         }
         //vader attacks           
         else if (vader.chosen == true && kenobi.defend == true && kenobi.dead !== true) {
@@ -214,6 +226,8 @@ $(document).ready(function reset() {
             vader.atk += 12;
             $("#vaderHp").text(vader.hp);
             $("#kenobiHp").text(kenobi.hp)
+            $("#fight-text").text("Darth Vader attacked for " + vader.atk + "! " + 
+            "Obi Wan Kenobi counter attacked for " + kenobi.ctr + "!")
         } else if (vader.chosen == true && skywalker.defend == true && skywalker.dead !== true) {
             console.log("vader v sky attack");
             skywalker.hp -= vader.atk;
@@ -221,6 +235,8 @@ $(document).ready(function reset() {
             vader.atk += 12;
             $("#vaderHp").text(vader.hp);
             $("#skywalkerHp").text(skywalker.hp)
+            $("#fight-text").text("Darth Vader attacked for " + vader.atk + "! " + 
+            "Luke Skywalker counter attacked for " + skywalker.ctr + "!")
         } else if (vader.chosen == true && kylo.defend == true && kylo.dead !== true) {
             console.log("vader v kylo attack");
             kylo.hp -= vader.atk;
@@ -228,6 +244,8 @@ $(document).ready(function reset() {
             vader.atk += 12;
             $("#vaderHp").text(vader.hp);
             $("#kyloHp").text(kylo.hp)
+            $("#fight-text").text("Darth Vader attacked for " + vader.atk + "! " + 
+            "Kylo Ren counter attacked for " + kylo.ctr + "!")
         }
         //kylo attacks
         else if (kylo.chosen == true && kenobi.defend == true && kenobi.dead !== true) {
@@ -237,6 +255,8 @@ $(document).ready(function reset() {
             kylo.atk += 10;
             $("#kenobiHp").text(kenobi.hp);
             $("#kyloHp").text(kylo.hp)
+            $("#fight-text").text("Kylo Ren attacked for " + kylo.atk + "! " + 
+            "Obi Wan Kenobi counter attacked for " + kenobi.ctr + "!")
         } else if (kylo.chosen == true && vader.defend == true && vader.dead !== true) {
             console.log("kylo v vader attack");
             vader.hp -= kylo.atk;
@@ -244,6 +264,8 @@ $(document).ready(function reset() {
             kylo.atk += 10;
             $("#vaderHp").text(vader.hp);
             $("#kyloHp").text(kylo.hp)
+            $("#fight-text").text("Kylo Ren attacked for " + kylo.atk + "! " + 
+            "Darth Vader counter attacked for " + vader.ctr + "!")
         } else if (kylo.chosen == true && skywalker.defend == true && skywalker.dead !== true) {
             console.log("kylo v sky attack");
             skywalker.hp -= kylo.atk;
@@ -251,6 +273,8 @@ $(document).ready(function reset() {
             kylo.atk += 10;
             $("#skywalkerHp").text(skywalker.hp)
             $("#kyloHp").text(kylo.hp)
+            $("#fight-text").text("Kylo Ren attacked for " + kylo.atk + "! " + 
+            "Luke Skywalker counter attacked for " + skywalker.ctr + "!")
         }
     })
 
@@ -260,7 +284,7 @@ $(document).ready(function reset() {
         if (skywalker.hp <= 0 && skywalker.dead !== true) {
             skywalker.dead = true;
             $("#skywalker").hide();
-
+            $("#fight-text").text("You've vanquished your enemy. Choose your next adversary!");
             skywalker.defend = false;
             defenderOpen = true;
 
@@ -271,6 +295,7 @@ $(document).ready(function reset() {
         } else if (kenobi.hp <= 0 && kenobi.dead !== true) {
             kenobi.dead = true;
             $("#kenobi").hide();
+            $("#fight-text").text("You've vanquished your enemy. Choose your next adversary!");
             kenobi.defend = false;
             defenderOpen = true;
             if (kenobi.chosen == true) {
@@ -280,6 +305,7 @@ $(document).ready(function reset() {
         } else if (vader.hp <= 0 && vader.dead !== true) {
             vader.dead = true;
             $("#vader").hide();
+            $("#fight-text").text("You've vanquished your enemy. Choose your next adversary!");
             vader.defend = false;
             defenderOpen = true;
             if (vader.chosen == true) {
@@ -289,6 +315,7 @@ $(document).ready(function reset() {
         } else if (kylo.hp <= 0 && kylo.dead !== true) {
             kylo.dead = true;
             $("#kylo").hide();
+            $("#fight-text").text("You've vanquished your enemy. Choose your next adversary!");
             kylo.defend = false;
             defenderOpen = true;
             if (kylo.chosen == true) {
@@ -367,6 +394,10 @@ $(document).ready(function reset() {
         $(".kenobi").appendTo(".start");
         $(".vader").appendTo(".start");
         $(".kylo").appendTo(".start");
+        $("#skywalker").removeClass("defColor enemyColor");
+        $("#kenobi").removeClass("defColor enemyColor");
+        $("#vader").removeClass("defColor enemyColor");
+        $("#kylo").removeClass("defColor enemyColor");
         reset();
     })
 
